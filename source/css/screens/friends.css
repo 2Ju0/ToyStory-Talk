@@ -1,0 +1,208 @@
+#friends-screen,
+#chats-screen {
+  height: 150vh;
+  background-image: url("/img/check.jpg");
+  background-size: 100%;
+}
+
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: hsla(24, 100%, 57%, 80%);
+  padding: 10px 0px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel,
+.friends-screen__birthday,
+.friends-screen__friend-list {
+  margin-top: 30px;
+  padding-top: 13px;
+  font-size: 13px;
+  font-weight: 600;
+  border-top: 1.7px solid #2b5a8e;
+}
+
+.friends-screen__channel-header,
+.friends-screen__birthday-header,
+.friends-screen__friend-list-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.user-component__column--music {
+  border: 2px solid #00cd3c;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 12px;
+}
+
+.user-component__column--music i {
+  color: #00cd3c;
+}
+
+.line {
+  position: relative;
+  width: 500px;
+  height: 20px;
+  top: 10px;
+  left: -40px;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-image: url("/img/wall-night.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  animation: hideSplashScreen 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.toy-story-logo {
+  height: 100px;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  animation: twinkle-1 1s infinite;
+}
+
+.little-star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  animation: twinkle-2 1s infinite;
+}
+
+#star1 {
+  top: 240px;
+  left: 110px;
+  animation-delay: 0.6s;
+}
+
+#star2 {
+  top: 200px;
+  left: 200px;
+  animation-delay: 0.1s;
+}
+
+#star3 {
+  top: 220px;
+  left: 300px;
+  animation-delay: 0.5s;
+}
+
+#star4 {
+  top: 440px;
+  left: 110px;
+  animation-delay: 0.4s;
+}
+
+#star5 {
+  top: 490px;
+  left: 200px;
+  animation-delay: 0.3s;
+}
+
+#star6 {
+  top: 460px;
+  left: 300px;
+  animation-delay: 0.2s;
+}
+
+#star7 {
+  top: 100px;
+  left: 70px;
+}
+
+#star8 {
+  top: 40px;
+  left: 220px;
+}
+
+#star9 {
+  top: 640px;
+  left: 70px;
+}
+
+#star10 {
+  top: 600px;
+  left: 400px;
+}
+
+#star11 {
+  top: 80px;
+  left: 340px;
+}
+
+@keyframes twinkle-1 {
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-2 {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+#rocket {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: rocket 3s linear forwards;
+}
+
+@keyframes rocket {
+  0% {
+    top: 600px;
+    left: -80px;
+  }
+  50% {
+    left: 250px;
+    top: 40px;
+  }
+  100% {
+    left: 300px;
+    top: -60px;
+    visibility: hidden;
+  }
+}

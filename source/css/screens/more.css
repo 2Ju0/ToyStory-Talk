@@ -1,0 +1,125 @@
+.more-screen .icon-row {
+  margin-top: 25px;
+}
+
+.kakao-pay {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2.5px solid #2b5a8e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 20px 0px;
+}
+
+.kakao-pay__column {
+  display: flex;
+}
+
+.kakao-pay__column i {
+  color: black;
+  margin-right: 5px;
+}
+
+.kakao-pay__column span:hover {
+  color: tomato;
+}
+
+.kakao-pay__divider {
+  width: 1.3px;
+  height: 20px;
+  background-color: #2b5a8e;
+  margin: 0px 10px;
+}
+
+.more-suggestions {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-suggestions__icons__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.more-suggestions__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+
+.more-suggestions__icon:hover {
+  animation: big 0.8s ease-in-out;
+}
+
+@keyframes big {
+  0%,
+  40% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(161, 111, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.more-suggestions__icon-image i {
+  font-size: 30px;
+  color: white;
+}
+
+.icon__more span {
+  font-size: 13px;
+}
+
+.weather {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 10px;
+}
+
+.weather__day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather__day__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.weather__day div {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.weather__day__subtitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.weather__day i {
+  font-size: 60px;
+}
